@@ -1,15 +1,15 @@
 const express= require("express");
 const app= express();
-const mysql= require("mysql2");
+const mysql= require("mysql");
 const bodyParser = require("body-parser");
 const cors= require("cors");
 const { application } = require("express");
 
 
-const db= mysql.createPool({
+const db= mysql.createConnection({
     host:"localhost",
     user:"root",
-    password:"fast123",
+    password:"123456",
     database:"airport_management"
 });
 
